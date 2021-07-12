@@ -1,0 +1,44 @@
+body{
+	background-color: darksalmon;
+}
+
+.photo > img {
+	width: 50%;
+	border: double;
+	border-width: 5px;
+}
+
+header{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#phrase {
+	font-size: 15px;
+	font-family: Sans-serif;
+	font-weight: bolder;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+
+h2 {
+	text-align: center;
+}
+
+li {
+   margin: 15px;
+}
+
+#date {
+	font-weight: bolder;
+}
+
+footer {
+	margin-top: 50px;
+}
