@@ -6,6 +6,7 @@ body{
 	width: 50%;
 	border: double;
 	border-width: 5px;
+	align-items: center;
 }
 
 header{
