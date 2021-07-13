@@ -2,11 +2,11 @@ body{
 	background-color: darksalmon;
 }
 
-.photo > img {
+img {
 	width: 50%;
 	border: double;
 	border-width: 5px;
-	align-items: center;
+	margin-left: 150px;
 }
 
 header{
