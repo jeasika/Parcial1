@@ -20,7 +20,12 @@ Funciones 1 -  Crea una funcion llamada "mayusculas" que:
 
 // CREA TU FUNCION MAYUSCULAS aqui:
 
-
+function mayusculas(nombres){
+	nombres.forEach((name) => {
+		console.log(name.toUpperCase());
+		}
+	)
+}
 
 
 /*
@@ -35,8 +40,10 @@ Funciones 2 -  Crea una funcion llamada "calculateDogAge" que:
 
 // CREA TU FUNCION calculateDogAge aqui:
 
-
-
+function calculateDogAge(age){
+	var calculateAge = Number(age) * 7;
+	console.log("Tu perro tiene " + calculateAge + " años perro");
+}
 
 
 /*
@@ -65,9 +72,15 @@ fahrenheitToCelsius(95) --> 35
 
 // CREA TUS FUNCIONES  aqui:
 
+function celsiusToFahrenheit(gradosCelsius){
+	var gradosFahrenheit = Number(gradosCelsius) * (9/5) + 32;
+	console.log(gradosFahrenheit);
+}
 
-
-
+function fahrenheitToCelsius(gradosFahrenheit) {
+	var gradosCelsius = ( Number(gradosFahrenheit) - 32) * (5/9);
+	console.log(gradosCelsius);
+}
 
 
 /*  OBJETOS 
@@ -86,7 +99,19 @@ C) Con un console.log escribe el nombre del primer objeto, el color del segundo,
 
 */
 
+function Perro(Nombre, Color, Raza){
+	this.Nombre = Nombre;
+	this.Color = Color;
+	this.Raza = Raza;
+}
 
+var p1 = new Perro("Bella", "Crema", "Shitzu");
+var p2 = new Perro("Baloo", "Blanco", "Dalmata");
+var p3 = new Perro("Lulu", "Negro", "Husky");
+
+console.log(p1.Nombre);
+console.log(p2.Color);
+console.log(p3.Raza); 
 
 /***
  * 
